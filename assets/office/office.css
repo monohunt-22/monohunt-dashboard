@@ -12,3 +12,6 @@
 .staff-list{z-index:auto}
 
 .office:has(.reference:not([hidden])) .scene-caption{z-index:21}
+
+nav{gap:4px}nav a{padding:11px 14px}.side-note{padding:0;overflow:hidden;min-height:0}.side-note p{margin:0;padding:13px 14px;line-height:1.75}.side-note img{width:100%;height:auto;display:block}
+@media(max-width:1200px){nav a{padding:11px 12px}}@media(max-width:700px){nav a{padding:8px 10px}}
