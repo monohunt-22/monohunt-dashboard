@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "team_id": "b",
+  "updated_at": null,
+  "status": "unconfirmed",
+  "task": null,
+  "progress": null,
+  "last_report": null,
+  "issues": [],
+  "source_urls": []
+}
