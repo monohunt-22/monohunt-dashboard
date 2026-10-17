@@ -6,7 +6,7 @@
  // Motion is enabled after the static composition passes visual review.
  if(office.classList.contains('motion-ready')){paused=window.matchMedia('(prefers-reduced-motion: reduce)').matches;sync();}
  motion.addEventListener('click',()=>{if(!reference.hidden)return;office.classList.add('motion-ready');paused=!paused;sync();});
- compare.addEventListener('click',()=>{reference.hidden=!reference.hidden;compare.setAttribute('aria-pressed',String(!reference.hidden));compare.textContent=reference.hidden?'A案原本と比較':'編集室に戻る';if(!reference.hidden){wasPaused=paused;paused=true;}else{paused=wasPaused;}sync();});
+ compare.addEventListener('click',()=>{reference.hidden=!reference.hidden;document.querySelector('.scene-caption').textContent=reference.hidden?'演出デモ・実際の稼働とは非連動':'A案原本：画像内の数値や作業は参考例';compare.setAttribute('aria-pressed',String(!reference.hidden));compare.textContent=reference.hidden?'A案原本と比較':'編集室に戻る';if(!reference.hidden){wasPaused=paused;paused=true;}else{paused=wasPaused;}sync();});
  const messages={relax:'ひと息ついて、次のアイデアへ。\n落ち着いた編集室です。',normal:'みんなで、ひとつずつ丁寧に。\n良い記事を届けましょう。',busy:'少しテンポを上げて集中。\n確認はひとつずつ、確実に。',overload:'忙しいときこそ、丁寧に。\n品質を大切に進めましょう。'};
  document.querySelectorAll('.modes button').forEach(b=>b.addEventListener('click',()=>{office.dataset.mode=b.dataset.mode;document.getElementById('mode-message').innerText=messages[b.dataset.mode];document.querySelectorAll('.modes button').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});}));
  function clock(){document.getElementById('clock').textContent=new Intl.DateTimeFormat('ja-JP',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit',weekday:'short',hour:'2-digit',minute:'2-digit'}).format(new Date());}clock();setInterval(clock,30000);
