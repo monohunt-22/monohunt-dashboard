@@ -1,13 +1,13 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-10-17T06:43:53.853575+00:00",
+  "checked_at": "2026-10-17T09:36:45.990676+00:00",
   "status": "ok",
   "published_count": 35,
   "posts": [
     {
       "id": 468,
       "title": "ReFa SMART WとS+を徹底比較｜400円差ならどっちがおすすめ？",
-      "modified": "2026-10-11T19:14:30",
+      "modified": "2026-10-17T16:06:07",
       "date": "2026-10-11T08:19:41",
       "link": "https://monohunt.com/refa-smart-w-splus-comparison/"
     },
@@ -231,7 +231,7 @@
     {
       "id": 42,
       "title": "SwitchBot 気化式加湿器Plusと通常モデルの違い｜自動給水の条件を比較",
-      "modified": "2026-10-05T12:42:31",
+      "modified": "2026-10-17T16:05:56",
       "date": "2026-10-04T10:34:53",
       "link": "https://monohunt.com/switchbot-evaporative-humidifier-plus-difference/"
     },
