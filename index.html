@@ -56,13 +56,14 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans
   <aside class="sidebar">
     <div class="brand"><span class="bot">🤖</span><div>MONOHUNT AI編集部<small>利益につながる記事だけを完成へ</small></div></div>
     <nav class="nav">
-      <a class="active" href="./">🏠 ダッシュボード</a>\n      <a href="./manager.html">📋 記事進捗・管理</a>
-      <a href="#">🧠 企画・市場調査</a>
-      <a href="#">⚖️ A班｜比較記事</a>
-      <a href="#">🛒 B班｜どこで買う</a>
-      <a href="#">✅ C班｜品質検査</a>
-      <a href="#">📈 成果分析</a>
-      <a href="#">⚙️ 設定</a>
+      <a class="active" href="./">🏠 ダッシュボード</a>
+      <a href="./manager.html">📋 記事進捗・管理</a>
+      <a href="./manager.html">🧠 企画・市場調査</a>
+      <a href="./manager.html">⚖️ A班｜比較記事</a>
+      <a href="./manager.html">🛒 B班｜どこで買う</a>
+      <a href="./manager.html">✅ C班｜品質検査</a>
+      <a href="#results">📈 成果分析</a>
+      <a href="#policy">⚙️ 設定</a>
     </nav>
     <div class="side-note">
       <b>新ルール</b><br>
@@ -76,14 +77,14 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans
     <div class="topbar">
       <div>
         <h1>おはようございます！</h1>
-        <p>4班の作業状況は報告が確認できるまで未確認です。公開記事は自動取得します。</p>
+        <p>各班の実稼働は未確認です。公開記事数は取得に成功した場合のみ表示します。</p>
       </div>
       <div class="date"><span id="today">日付を確認中</span></div>
     </div>
 
     <section class="hero">
       <div class="hero-head">
-        <div><h2>AI編集部の稼働状況</h2><span class="sub">企画 → 制作 → 検査 → 公開の順で進行</span></div>
+        <div><h2>AI編集部の担当と報告状況</h2><span class="sub">運用フロー：企画 → 制作 → 独立検査 → オーナー承認後の公開</span></div>
         <span class="pill">品質優先モード</span>
       </div>
       <div class="office">
@@ -98,7 +99,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans
           <div class="role">A班｜商品比較記事</div>
           <div class="avatar">⚖️</div>
           <h3>比較担当</h3>
-          <p>「AとBの違い」「新旧モデル比較」「どっちを買う？」を最大5本/日。</p>
+          <p>比較記事を担当。初期検証は1本。</p>
           <div class="status"><span class="dot" style="background:#9aa5b7;box-shadow:none"></span>作業状況：未確認</div>
         </article>
         <article class="worker b">
@@ -112,7 +113,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans
           <div class="role">C班｜独立品質検査・公開</div>
           <div class="avatar">🛡️</div>
           <h3>検品担当</h3>
-          <p>商品情報、画像、アフィリエイト、スマホ表示、SEOを検査。合格記事だけ公開。</p>
+          <p>商品情報、画像、アフィリエイト、スマホ表示、SEOを検査。検査結果を報告。公開はオーナーの事前承認後。</p>
           <div class="status"><span class="dot" style="background:#9aa5b7;box-shadow:none"></span>作業状況：未確認</div>
         </article>
       </div>
@@ -122,9 +123,9 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans
       <div class="card">
         <h3>📌 今日の進行タスク</h3>
         <p class="sub">各班の作業率はチャットから自動取得できないため、根拠のない進捗率は表示しません。</p><p><a href="./manager.html">記事・作業の状況を確認／記録する →</a></p></div>
-      <div class="card"><h3>📊 今月の成果</h3>
+      <div class="card" id="results"><h3>📊 収益・記事指標（確認済みデータのみ）</h3>
         <div class="bigmoney">未連携 <span class="sub">※収益データなし</span></div>
-        <div class="up">まずは「クリック→発生→確定」を計測</div>
+        <div class="up">クリック・成果発生・確定収益は未連携</div>
         <div class="kpi" style="margin-top:12px">
           <div><strong>—</strong><span>完成記事：未確認</span></div>
           <div><strong id="publicCount">—</strong><span>公開記事：自動取得</span></div>
@@ -134,39 +135,34 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans
       </div>
 
       <div class="card">
-        <h3>🕘 公開記事の自動更新</h3><p class="sub" id="lastFetch">データ取得待ち</p><p class="sub" id="fetchNote">WordPress公開記事のみ対象。各班の作業状況とは別です。</p><p><a href="./manager.html">詳しい進捗を見る →</a></p><div style="display:none">
-        <div class="feed"><div class="ico">🧠</div><div><b>企画班を新設</b><p>4班体制へ変更</p></div></div>
-        <div class="feed"><div class="ico">⚖️</div><div><b>A班テーマを準備</b><p>比較記事テスト用</p></div></div>
-        <div class="feed"><div class="ico">🛒</div><div><b>B班テーマを準備</b><p>購入先記事テスト用</p></div></div>
-        <div class="feed"><div class="ico">🛡️</div><div><b>C班の検査条件を強化</b><p>リンク先が開くだけでは合格にしない</p></div></div>
-      </div></div>
+        <h3>🕘 公開記事の自動更新</h3><p class="sub" id="lastFetch">データ取得待ち</p><p class="sub" id="fetchNote">WordPress公開記事のみ対象。各班の作業状況とは別です。</p><p><a href="./manager.html">詳しい進捗を見る →</a></p></div>
     </section>
 
     <section class="guard">
       <div class="card">
-        <h3>🛡️ C班 必須検査</h3>
+        <h3>🛡️ C班 検査基準（検査結果ではありません）</h3>
         <table class="rule-table">
           <tr><th>項目</th><th>合格条件</th><th>状態</th></tr>
-          <tr><td>商品情報</td><td>型番・仕様・比較内容が正確</td><td><span class="badge warn">検査待ち</span></td></tr>
-          <tr><td>商品画像</td><td>別商品なし・画像切れなし・利用条件OK</td><td><span class="badge warn">検査待ち</span></td></tr>
-          <tr><td>Amazon</td><td>正しい商品＋報酬対象導線</td><td><span class="badge warn">検査待ち</span></td></tr>
-          <tr><td>楽天</td><td>正しい商品＋報酬対象導線</td><td><span class="badge warn">検査待ち</span></td></tr>
-          <tr><td>スマホ</td><td>崩れ・カード欠落なし</td><td><span class="badge warn">検査待ち</span></td></tr>
-          <tr><td>SEO</td><td>検索意図一致・カニバリなし</td><td><span class="badge warn">検査待ち</span></td></tr>
+          <tr><td>商品情報</td><td>型番・仕様・比較内容が正確</td><td><span class="badge warn">未検証</span></td></tr>
+          <tr><td>商品画像</td><td>別商品なし・画像切れなし・利用条件OK</td><td><span class="badge warn">未検証</span></td></tr>
+          <tr><td>Amazon</td><td>正しい商品＋報酬対象導線</td><td><span class="badge warn">未検証</span></td></tr>
+          <tr><td>楽天</td><td>正しい商品＋報酬対象導線</td><td><span class="badge warn">未検証</span></td></tr>
+          <tr><td>スマホ</td><td>崩れ・カード欠落なし</td><td><span class="badge warn">未検証</span></td></tr>
+          <tr><td>SEO</td><td>検索意図一致・カニバリなし</td><td><span class="badge warn">未検証</span></td></tr>
         </table>
       </div>
 
-      <div class="card">
-        <h3>🚦 導入スケジュール</h3>
+      <div class="card" id="policy">
+        <h3>🚦 制作方針（達成状況ではありません）</h3>
         <div class="lane">
           <div><b>初日</b>A 1本<br>B 1本<br>Cが徹底検査</div>
-          <div><b>2〜3日目</b>A 3本<br>B 3本<br>再現性確認</div>
-          <div><b>安定後</b>A 最大5本<br>B 最大5本</div>
-          <div><b>公開条件</b>C班合格のみ<br>未完成は下書き</div>
+          <div><b>2〜3日目</b>合格を確認後<br>段階的増加</div>
+          <div><b>安定後</b>全班合計で<br>1日最大10本</div>
+          <div><b>公開条件</b>C班検査と<br>オーナー承認が必要</div>
         </div>
         <div class="footer-note">
           <b>企画班を追加した理由：</b><br>
-          A班とB班が自分でテーマ選定まで行うと、同じ商品・似た検索意図の記事が重複しやすくなります。企画班が「どの商品を、どの検索意図で、どちらの班に渡すか」を一元管理することで、カニバリと数合わせを防げます。
+          A班とB班が自分でテーマ選定まで行うと、同じ商品・似た検索意図の記事が重複しやすくなります。企画班が検索意図と担当を整理する運用方針です。実施状況は未確認です。
         </div>
       </div>
     </section>
