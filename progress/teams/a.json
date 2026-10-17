@@ -1,16 +1,17 @@
 {
   "schema_version": 1,
   "team_id": "a",
-  "updated_at": "2026-10-17T23:32:21+00:00",
-  "status": "in_progress",
+  "status": "completed",
   "task": "AI編集室の進捗自動連携を実装",
-  "progress": "保存済み画面の検査は完了。共通データと各班の報告手順を準備し、表示連携を実装中。",
-  "last_report": "6a2be71で公開版と単体HTMLの指定4幅・原本比較・メッセージ切替・タスク保存を確認済み。今回は既存画面を維持してGitHub報告の取得機能を追加する。",
+  "progress": "共通進捗データ、30秒ごとの自動取得、5項目表示、各班の更新手順を実装。公開画面の表示・4つの画面幅・既存タスクの保存を確認。",
+  "last_report": "A班実報告：進捗連携の実装を完了。GitHubに保存した担当作業・進捗・最終報告・更新日時・問題点が公開AI編集室に反映されることを確認。人物と個人タスクを維持し、未報告の企画班・B班・C班は未確認と表示。",
   "issues": [
     "スマホ実機・OS設定の実切替・ローカル起動は未検証。",
     "他チャットは自動監視できない。各班がGitHubへ節目の報告を保存する必要がある。"
   ],
   "source_urls": [
-    "https://github.com/monohunt-22/monohunt-dashboard/blob/6a2be71b80ad24426efe1677fdfa65850faded25/OFFICE_QA_20261018.md"
-  ]
+    "https://github.com/monohunt-22/monohunt-dashboard/commit/e79d0f0b70373b3ac91df2af396a48c83ddf7401",
+    "https://github.com/monohunt-22/monohunt-dashboard/blob/main/progress/README.md"
+  ],
+  "updated_at": "2026-10-17T23:37:26+00:00"
 }
