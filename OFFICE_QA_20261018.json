@@ -1,0 +1,128 @@
+{
+  "runtime_commit": "594b5f91076a097a34d21e72b7d02e41175d4299",
+  "checked_jst": "2026-10-18 08:05",
+  "public_matches": [
+    {
+      "path": "office.html",
+      "match": true,
+      "sha256": "90e801db02257d3341aa3bb0c864b5011b82c9550ed1170c66f54975c7636ffd"
+    },
+    {
+      "path": "office-qa.html",
+      "match": true,
+      "sha256": "4b38e7de88fa286490afe4413517c95696a9c45ccb9c742cd4c3311987833c75"
+    },
+    {
+      "path": "office-standalone.html",
+      "match": true,
+      "sha256": "25fd5aa2b9f3b393f52d0e8ad59eef953242b798972a6a94c7afc29b83537526"
+    },
+    {
+      "path": "assets/office/office.css",
+      "match": true,
+      "sha256": "080c269866bfd8ef6cf5767e62920d911e19de131a62858e6240355d8cbe7c97"
+    },
+    {
+      "path": "assets/office/office.js",
+      "match": true,
+      "sha256": "8ca16bfe2547c5fb259f7cf5c08d79496806cd54185c809c45d608d36637445b"
+    }
+  ],
+  "width_tests": [
+    {
+      "target": "public",
+      "width": 360,
+      "document_scroll_width": 360,
+      "loaded_character_count": 4,
+      "failed_images": 0,
+      "character_animation": "none",
+      "character_transform": "none",
+      "mobile_main_button_min_height": 44
+    },
+    {
+      "target": "public",
+      "width": 390,
+      "document_scroll_width": 390,
+      "loaded_character_count": 4,
+      "failed_images": 0,
+      "character_animation": "none",
+      "character_transform": "none",
+      "mobile_main_button_min_height": 44
+    },
+    {
+      "target": "public",
+      "width": 768,
+      "document_scroll_width": 768,
+      "loaded_character_count": 4,
+      "failed_images": 0,
+      "character_animation": "none",
+      "character_transform": "none",
+      "mobile_main_button_min_height": null
+    },
+    {
+      "target": "public",
+      "width": 1536,
+      "document_scroll_width": 1536,
+      "loaded_character_count": 4,
+      "failed_images": 0,
+      "character_animation": "none",
+      "character_transform": "none",
+      "mobile_main_button_min_height": null
+    },
+    {
+      "target": "standalone",
+      "width": 360,
+      "document_scroll_width": 360,
+      "loaded_character_count": 4,
+      "failed_images": 0,
+      "character_animation": "none",
+      "character_transform": "none",
+      "mobile_main_button_min_height": 44
+    },
+    {
+      "target": "standalone",
+      "width": 390,
+      "document_scroll_width": 390,
+      "loaded_character_count": 4,
+      "failed_images": 0,
+      "character_animation": "none",
+      "character_transform": "none",
+      "mobile_main_button_min_height": 44
+    },
+    {
+      "target": "standalone",
+      "width": 768,
+      "document_scroll_width": 768,
+      "loaded_character_count": 4,
+      "failed_images": 0,
+      "character_animation": "none",
+      "character_transform": "none",
+      "mobile_main_button_min_height": null
+    },
+    {
+      "target": "standalone",
+      "width": 1536,
+      "document_scroll_width": 1536,
+      "loaded_character_count": 4,
+      "failed_images": 0,
+      "character_animation": "none",
+      "character_transform": "none",
+      "mobile_main_button_min_height": null
+    }
+  ],
+  "operations": {
+    "standalone_https_runtime": true,
+    "public_reference_open_and_close": true,
+    "standalone_reference_open_and_close": true,
+    "all_four_messages_public_and_standalone": true,
+    "task_add_complete_reload_preserves_done": true,
+    "saved_task_visible_in_public_version": true,
+    "test_task_delete_reload": true
+  },
+  "limits": [
+    "physical smartphone unavailable",
+    "local file:// execution not tested",
+    "OS preference switching unavailable; character animation removed for all settings"
+  ],
+  "repeated_long_processing": false
+}
