@@ -16,3 +16,15 @@
 
 nav{gap:4px}nav a{padding:11px 14px}.side-note{padding:0;overflow:hidden;min-height:0}.side-note p{margin:0;padding:13px 14px;line-height:1.75}.side-note img{width:100%;height:auto;display:block}
 @media(max-width:1200px){nav a{padding:11px 12px}}@media(max-width:700px){nav a{padding:8px 10px}}
+
+/* Keep mobile controls touchable without changing the reference composition. */
+@media(max-width:700px){
+ nav a,.scene-bar button,.modes button,#task-form button,#task-list button,summary{min-height:44px}
+ nav a,.scene-bar button,summary{display:flex;align-items:center}
+ #new-task{font-size:16px;min-height:44px}
+ #task-list label{min-height:44px}
+ #task-list input{flex:0 0 20px;width:20px;height:20px}
+ #task-list button{min-width:44px}
+ .scene-bar{align-items:center}
+ .scene-bar>div{align-items:center;flex-wrap:wrap}
+}
