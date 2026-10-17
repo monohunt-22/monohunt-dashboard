@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MONOHUNT AI編集部ダッシュボード</title>
+<style>
+:root{
+  --bg:#f4f7fb; --panel:#ffffff; --ink:#172033; --muted:#6c7892;
+  --line:#e6ebf3; --nav:#13233b; --blue:#4b7bec; --green:#39b980;
+  --gold:#e9a93b; --pink:#d95f96;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif}
+.app{display:grid;grid-template-columns:230px 1fr;min-height:100vh}
+.sidebar{background:linear-gradient(180deg,#162740 0%,#101d31 100%);color:#fff;padding:22px 16px;position:sticky;top:0;height:100vh}
+.brand{display:flex;gap:10px;align-items:center;font-weight:800;font-size:18px;margin-bottom:24px}
+.brand .bot{font-size:28px}.brand small{display:block;font-size:10px;font-weight:500;color:#aebbd0;margin-top:2px}
+.nav a{display:flex;gap:10px;align-items:center;color:#c7d2e4;text-decoration:none;padding:11px 12px;border-radius:10px;margin:5px 0;font-size:14px}
+.nav a.active{background:#4376e8;color:white;font-weight:700}.nav a:hover{background:#203857;color:#fff}
+.side-note{position:absolute;left:16px;right:16px;bottom:20px;padding:14px;border:1px solid #2d4465;border-radius:14px;background:#162943;color:#d7e1ef;font-size:12px;line-height:1.6}
+.main{padding:24px 28px 36px}
+.topbar{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px}
+.topbar h1{margin:0;font-size:28px}.topbar p{margin:7px 0 0;color:var(--muted)}
+.date{font-size:13px;color:var(--muted);background:#fff;padding:10px 14px;border:1px solid var(--line);border-radius:10px}
+.hero{background:linear-gradient(135deg,#eaf3ff,#fff8eb);border:1px solid #dce5f1;border-radius:18px;padding:18px;margin-bottom:18px;overflow:hidden}
+.hero-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:16px}
+.hero-head h2{margin:0;font-size:18px}.hero-head .pill{background:#13233b;color:#fff;padding:7px 10px;border-radius:999px;font-size:11px}
+.office{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.worker{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;min-height:175px;position:relative;box-shadow:0 6px 20px rgba(28,43,66,.06)}
+.worker .role{font-size:11px;font-weight:800;letter-spacing:.04em;color:var(--muted)}
+.worker .avatar{font-size:42px;margin:8px 0}
+.worker h3{margin:0 0 6px;font-size:16px}.worker p{margin:0;color:var(--muted);font-size:12px;line-height:1.55}
+.status{margin-top:11px;display:flex;align-items:center;gap:7px;font-size:11px;font-weight:700}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(57,185,128,.12)}
+.worker.plan{border-top:4px solid var(--gold)} .worker.a{border-top:4px solid var(--green)} .worker.b{border-top:4px solid var(--blue)} .worker.c{border-top:4px solid var(--pink)}
+.grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:16px;margin-top:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 5px 18px rgba(26,39,66,.04)}
+.card h3{margin:0 0 12px;font-size:15px}.card .sub{color:var(--muted);font-size:11px}
+.task{display:grid;grid-template-columns:1fr 110px 36px;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid #edf1f6}
+.task:last-child{border-bottom:0}.task b{font-size:13px}.task small{display:block;color:var(--muted);margin-top:3px}
+.bar{height:7px;background:#edf1f6;border-radius:999px;overflow:hidden}.bar span{display:block;height:100%;border-radius:999px}
+.kpi{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.kpi div{background:#f7f9fc;border:1px solid #edf0f5;border-radius:12px;padding:12px}.kpi strong{font-size:24px;display:block}.kpi span{font-size:11px;color:var(--muted)}
+.bigmoney{font-size:32px;font-weight:850;margin:6px 0}.up{color:#2ca86c;font-weight:700;font-size:13px}
+.feed{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid #edf1f6}.feed:last-child{border-bottom:0}.feed .ico{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:#f0f4fb}.feed b{font-size:12px}.feed p{margin:2px 0 0;font-size:11px;color:var(--muted)}
+.guard{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.rule-table{width:100%;border-collapse:collapse;font-size:12px}.rule-table th,.rule-table td{padding:10px;border-bottom:1px solid #edf1f6;text-align:left}.rule-table th{color:var(--muted);font-weight:700}.badge{display:inline-block;padding:4px 8px;border-radius:999px;font-size:10px;font-weight:800}.warn{background:#fff4dd;color:#9e6b12}
+.lane{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}.lane div{padding:11px;border-radius:12px;background:#f7f9fc;border:1px solid var(--line);font-size:11px;text-align:center}.lane b{display:block;margin-bottom:4px}
+.footer-note{margin-top:16px;padding:13px 15px;background:#eef4ff;border:1px solid #d9e5ff;border-radius:12px;font-size:12px;color:#38517d}
+@media(max-width:980px){.app{grid-template-columns:1fr}.sidebar{position:relative;height:auto}.side-note{position:static;margin-top:18px}.office{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.guard{grid-template-columns:1fr}}
+@media(max-width:560px){.main{padding:16px}.office{grid-template-columns:1fr}.topbar{display:block}.date{margin-top:12px;display:inline-block}.lane{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><span class="bot">🤖</span><div>MONOHUNT AI編集部<small>利益につながる記事だけを完成へ</small></div></div>
+    <nav class="nav">
+      <a class="active" href="#">🏠 ダッシュボード</a>
+      <a href="#">🧠 企画・市場調査</a>
+      <a href="#">⚖️ A班｜比較記事</a>
+      <a href="#">🛒 B班｜どこで買う</a>
+      <a href="#">✅ C班｜品質検査</a>
+      <a href="#">📈 成果分析</a>
+      <a href="#">⚙️ 設定</a>
+    </nav>
+    <div class="side-note">
+      <b>新ルール</b><br>
+      「1日10記事作る」ではなく<br>
+      <b>1日最大10記事を完成させる。</b><br><br>
+      未完了は下書きに残し、無理に公開しない。
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <h1>おはようございます！</h1>
+        <p>今日も4チームが、MONOHUNTの収益化を進めています。</p>
+      </div>
+      <div class="date">2026年10月17日（土）</div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-head">
+        <div><h2>AI編集部の稼働状況</h2><span class="sub">企画 → 制作 → 検査 → 公開の順で進行</span></div>
+        <span class="pill">品質優先モード</span>
+      </div>
+      <div class="office">
+        <article class="worker plan">
+          <div class="role">企画班｜市場調査・案件選定</div>
+          <div class="avatar">🧠</div>
+          <h3>企画担当</h3>
+          <p>検索需要、収益性、競合、カニバリを確認。A班とB班へテーマを振り分けます。</p>
+          <div class="status"><span class="dot"></span>候補30件を評価中</div>
+        </article>
+        <article class="worker a">
+          <div class="role">A班｜商品比較記事</div>
+          <div class="avatar">⚖️</div>
+          <h3>比較担当</h3>
+          <p>「AとBの違い」「新旧モデル比較」「どっちを買う？」を最大5本/日。</p>
+          <div class="status"><span class="dot"></span>比較記事 1本執筆中</div>
+        </article>
+        <article class="worker b">
+          <div class="role">B班｜どこで買う記事</div>
+          <div class="avatar">🛒</div>
+          <h3>購入先担当</h3>
+          <p>「どこで売ってる？」「Amazon・楽天どっち？」など購入直前の検索意図を狙います。</p>
+          <div class="status"><span class="dot"></span>販売店記事 1本執筆中</div>
+        </article>
+        <article class="worker c">
+          <div class="role">C班｜独立品質検査・公開</div>
+          <div class="avatar">🛡️</div>
+          <h3>検品担当</h3>
+          <p>商品情報、画像、アフィリエイト、スマホ表示、SEOを検査。合格記事だけ公開。</p>
+          <div class="status"><span class="dot"></span>2記事を検査待ち</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>📌 今日の進行タスク</h3>
+        <div class="task"><div><b>企画候補の評価</b><small>検索需要・収益性・重複チェック</small></div><div class="bar"><span style="width:72%;background:#e9a93b"></span></div><b>72%</b></div>
+        <div class="task"><div><b>A班：比較記事</b><small>初日テスト 1本</small></div><div class="bar"><span style="width:48%;background:#39b980"></span></div><b>48%</b></div>
+        <div class="task"><div><b>B班：どこで買う記事</b><small>初日テスト 1本</small></div><div class="bar"><span style="width:35%;background:#4b7bec"></span></div><b>35%</b></div>
+        <div class="task"><div><b>C班：購入導線検査</b><small>商品・報酬対象・スマホ表示</small></div><div class="bar"><span style="width:18%;background:#d95f96"></span></div><b>18%</b></div>
+      </div>
+
+      <div class="card">
+        <h3>📊 今月の成果</h3>
+        <div class="bigmoney">¥0 <span class="sub">※初期値</span></div>
+        <div class="up">まずは「クリック→発生→確定」を計測</div>
+        <div class="kpi" style="margin-top:12px">
+          <div><strong>0</strong><span>完成記事</span></div>
+          <div><strong>0</strong><span>公開記事</span></div>
+          <div><strong>0</strong><span>商品クリック</span></div>
+          <div><strong>0</strong><span>成果発生</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🕘 最新アクティビティ</h3>
+        <div class="feed"><div class="ico">🧠</div><div><b>企画班を新設</b><p>4班体制へ変更</p></div></div>
+        <div class="feed"><div class="ico">⚖️</div><div><b>A班テーマを準備</b><p>比較記事テスト用</p></div></div>
+        <div class="feed"><div class="ico">🛒</div><div><b>B班テーマを準備</b><p>購入先記事テスト用</p></div></div>
+        <div class="feed"><div class="ico">🛡️</div><div><b>C班の検査条件を強化</b><p>リンク先が開くだけでは合格にしない</p></div></div>
+      </div>
+    </section>
+
+    <section class="guard">
+      <div class="card">
+        <h3>🛡️ C班 必須検査</h3>
+        <table class="rule-table">
+          <tr><th>項目</th><th>合格条件</th><th>状態</th></tr>
+          <tr><td>商品情報</td><td>型番・仕様・比較内容が正確</td><td><span class="badge warn">検査待ち</span></td></tr>
+          <tr><td>商品画像</td><td>別商品なし・画像切れなし・利用条件OK</td><td><span class="badge warn">検査待ち</span></td></tr>
+          <tr><td>Amazon</td><td>正しい商品＋報酬対象導線</td><td><span class="badge warn">検査待ち</span></td></tr>
+          <tr><td>楽天</td><td>正しい商品＋報酬対象導線</td><td><span class="badge warn">検査待ち</span></td></tr>
+          <tr><td>スマホ</td><td>崩れ・カード欠落なし</td><td><span class="badge warn">検査待ち</span></td></tr>
+          <tr><td>SEO</td><td>検索意図一致・カニバリなし</td><td><span class="badge warn">検査待ち</span></td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <h3>🚦 導入スケジュール</h3>
+        <div class="lane">
+          <div><b>初日</b>A 1本<br>B 1本<br>Cが徹底検査</div>
+          <div><b>2〜3日目</b>A 3本<br>B 3本<br>再現性確認</div>
+          <div><b>安定後</b>A 最大5本<br>B 最大5本</div>
+          <div><b>公開条件</b>C班合格のみ<br>未完成は下書き</div>
+        </div>
+        <div class="footer-note">
+          <b>企画班を追加した理由：</b><br>
+          A班とB班が自分でテーマ選定まで行うと、同じ商品・似た検索意図の記事が重複しやすくなります。企画班が「どの商品を、どの検索意図で、どちらの班に渡すか」を一元管理することで、カニバリと数合わせを防げます。
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
