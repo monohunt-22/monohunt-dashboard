@@ -1,0 +1,96 @@
+{
+  "implementation_commit": "e79d0f0b70373b3ac91df2af396a48c83ddf7401",
+  "actual_report_commit": "8ae5d876e6e663bd59f6c5b0dbcca22fb5631a2a",
+  "automatic_update": {
+    "page_reloaded_after_report_commit": false,
+    "from_status": "in_progress",
+    "to_status": "completed",
+    "from_reported_at_jst": "2026-10-18 08:32:21",
+    "to_reported_at_jst": "2026-10-18 08:37:26",
+    "page_last_fetch_jst": "2026-10-18 08:38:41",
+    "pages_deploy_success_jst": "2026-10-18 08:38:19",
+    "unknown_teams": [
+      "research",
+      "b",
+      "c"
+    ]
+  },
+  "runtime_public_match": [
+    {
+      "path": "office.html",
+      "match": true,
+      "sha256": "2db8de761f05a5261fba410599a6ac8e9d8cb4d7afac0e5de0a3c5b8bb0a0473"
+    },
+    {
+      "path": "office-qa.html",
+      "match": true,
+      "sha256": "6df40c1dd8ad9b7c7b30f15a8b72ebe7180ca2364b463d91d5328bd620d72898"
+    },
+    {
+      "path": "assets/office/office.css",
+      "match": true,
+      "sha256": "683316232eec845f9a527b5dc6d08c47b5551b111ee00e55e4597856e9e914ef"
+    },
+    {
+      "path": "assets/office/office.js",
+      "match": true,
+      "sha256": "d2c21f3ff9b02ff804c54bb3aa3f9ae6fa5dfb6f34801d4aed68af44f0a1955a"
+    },
+    {
+      "path": "assets/office/progress.js",
+      "match": true,
+      "sha256": "c3e1b5e1868852b67103529fbbf848c517de7a81227082bc13e8a31bf124025e"
+    }
+  ],
+  "actual_report_public_match": {
+    "report_commit": "8ae5d876e6e663bd59f6c5b0dbcca22fb5631a2a",
+    "matched": true,
+    "sha256": "115c38c57410495d08757033bee4d2a970e6a004463fbf98d584bb53d265e7c8",
+    "status": "completed",
+    "updated_at": "2026-10-17T23:37:26+00:00",
+    "verified_at": "2026-10-17T23:38:58.742444+00:00"
+  },
+  "responsive_checks": [
+    {
+      "iframe_width": 360,
+      "body_width": 345,
+      "body_scroll_width": 345,
+      "loaded_characters": 4,
+      "failed_images": 0,
+      "team_reports": 4,
+      "a_report_fields": 5
+    },
+    {
+      "iframe_width": 390,
+      "body_width": 375,
+      "body_scroll_width": 375,
+      "loaded_characters": 4,
+      "failed_images": 0,
+      "team_reports": 4,
+      "a_report_fields": 5
+    },
+    {
+      "iframe_width": 768,
+      "body_width": 768,
+      "body_scroll_width": 768,
+      "loaded_characters": 4,
+      "failed_images": 0,
+      "team_reports": 4,
+      "a_report_fields": 5
+    },
+    {
+      "iframe_width": 1536,
+      "body_width": 1536,
+      "body_scroll_width": 1536,
+      "loaded_characters": 4,
+      "failed_images": 0,
+      "team_reports": 4,
+      "a_report_fields": 5
+    }
+  ],
+  "personal_task_save": true,
+  "reference_comparison": true,
+  "message_switch": true,
+  "no_wordpress_changes": true,
+  "old_standalone_unchanged": true
+}
