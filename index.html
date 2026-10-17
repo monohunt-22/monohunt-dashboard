@@ -56,7 +56,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans
   <aside class="sidebar">
     <div class="brand"><span class="bot">🤖</span><div>MONOHUNT AI編集部<small>利益につながる記事だけを完成へ</small></div></div>
     <nav class="nav">
-      <a class="active" href="#">🏠 ダッシュボード</a>
+      <a class="active" href="./">🏠 ダッシュボード</a>\n      <a href="./manager.html">📋 記事進捗・管理</a>
       <a href="#">🧠 企画・市場調査</a>
       <a href="#">⚖️ A班｜比較記事</a>
       <a href="#">🛒 B班｜どこで買う</a>
@@ -76,9 +76,9 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans
     <div class="topbar">
       <div>
         <h1>おはようございます！</h1>
-        <p>今日も4チームが、MONOHUNTの収益化を進めています。</p>
+        <p>4班の作業状況は報告が確認できるまで未確認です。公開記事は自動取得します。</p>
       </div>
-      <div class="date">2026年10月17日（土）</div>
+      <div class="date"><span id="today">日付を確認中</span></div>
     </div>
 
     <section class="hero">
@@ -92,28 +92,28 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans
           <div class="avatar">🧠</div>
           <h3>企画担当</h3>
           <p>検索需要、収益性、競合、カニバリを確認。A班とB班へテーマを振り分けます。</p>
-          <div class="status"><span class="dot"></span>候補30件を評価中</div>
+          <div class="status"><span class="dot" style="background:#9aa5b7;box-shadow:none"></span>作業状況：未確認</div>
         </article>
         <article class="worker a">
           <div class="role">A班｜商品比較記事</div>
           <div class="avatar">⚖️</div>
           <h3>比較担当</h3>
           <p>「AとBの違い」「新旧モデル比較」「どっちを買う？」を最大5本/日。</p>
-          <div class="status"><span class="dot"></span>比較記事 1本執筆中</div>
+          <div class="status"><span class="dot" style="background:#9aa5b7;box-shadow:none"></span>作業状況：未確認</div>
         </article>
         <article class="worker b">
           <div class="role">B班｜どこで買う記事</div>
           <div class="avatar">🛒</div>
           <h3>購入先担当</h3>
           <p>「どこで売ってる？」「Amazon・楽天どっち？」など購入直前の検索意図を狙います。</p>
-          <div class="status"><span class="dot"></span>販売店記事 1本執筆中</div>
+          <div class="status"><span class="dot" style="background:#9aa5b7;box-shadow:none"></span>作業状況：未確認</div>
         </article>
         <article class="worker c">
           <div class="role">C班｜独立品質検査・公開</div>
           <div class="avatar">🛡️</div>
           <h3>検品担当</h3>
           <p>商品情報、画像、アフィリエイト、スマホ表示、SEOを検査。合格記事だけ公開。</p>
-          <div class="status"><span class="dot"></span>2記事を検査待ち</div>
+          <div class="status"><span class="dot" style="background:#9aa5b7;box-shadow:none"></span>作業状況：未確認</div>
         </article>
       </div>
     </section>
@@ -121,31 +121,25 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans
     <section class="grid">
       <div class="card">
         <h3>📌 今日の進行タスク</h3>
-        <div class="task"><div><b>企画候補の評価</b><small>検索需要・収益性・重複チェック</small></div><div class="bar"><span style="width:72%;background:#e9a93b"></span></div><b>72%</b></div>
-        <div class="task"><div><b>A班：比較記事</b><small>初日テスト 1本</small></div><div class="bar"><span style="width:48%;background:#39b980"></span></div><b>48%</b></div>
-        <div class="task"><div><b>B班：どこで買う記事</b><small>初日テスト 1本</small></div><div class="bar"><span style="width:35%;background:#4b7bec"></span></div><b>35%</b></div>
-        <div class="task"><div><b>C班：購入導線検査</b><small>商品・報酬対象・スマホ表示</small></div><div class="bar"><span style="width:18%;background:#d95f96"></span></div><b>18%</b></div>
-      </div>
-
-      <div class="card">
-        <h3>📊 今月の成果</h3>
-        <div class="bigmoney">¥0 <span class="sub">※初期値</span></div>
+        <p class="sub">各班の作業率はチャットから自動取得できないため、根拠のない進捗率は表示しません。</p><p><a href="./manager.html">記事・作業の状況を確認／記録する →</a></p></div>
+      <div class="card"><h3>📊 今月の成果</h3>
+        <div class="bigmoney">未連携 <span class="sub">※収益データなし</span></div>
         <div class="up">まずは「クリック→発生→確定」を計測</div>
         <div class="kpi" style="margin-top:12px">
-          <div><strong>0</strong><span>完成記事</span></div>
-          <div><strong>0</strong><span>公開記事</span></div>
-          <div><strong>0</strong><span>商品クリック</span></div>
-          <div><strong>0</strong><span>成果発生</span></div>
+          <div><strong>—</strong><span>完成記事：未確認</span></div>
+          <div><strong id="publicCount">—</strong><span>公開記事：自動取得</span></div>
+          <div><strong>—</strong><span>商品クリック：未連携</span></div>
+          <div><strong>—</strong><span>成果発生：未連携</span></div>
         </div>
       </div>
 
       <div class="card">
-        <h3>🕘 最新アクティビティ</h3>
+        <h3>🕘 公開記事の自動更新</h3><p class="sub" id="lastFetch">データ取得待ち</p><p class="sub" id="fetchNote">WordPress公開記事のみ対象。各班の作業状況とは別です。</p><p><a href="./manager.html">詳しい進捗を見る →</a></p><div style="display:none">
         <div class="feed"><div class="ico">🧠</div><div><b>企画班を新設</b><p>4班体制へ変更</p></div></div>
         <div class="feed"><div class="ico">⚖️</div><div><b>A班テーマを準備</b><p>比較記事テスト用</p></div></div>
         <div class="feed"><div class="ico">🛒</div><div><b>B班テーマを準備</b><p>購入先記事テスト用</p></div></div>
         <div class="feed"><div class="ico">🛡️</div><div><b>C班の検査条件を強化</b><p>リンク先が開くだけでは合格にしない</p></div></div>
-      </div>
+      </div></div>
     </section>
 
     <section class="guard">
@@ -178,5 +172,9 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans
     </section>
   </main>
 </div>
-</body>
+<script>
+document.getElementById('today').textContent=new Date().toLocaleDateString('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'long',timeZone:'Asia/Tokyo'});
+async function loadStatus(){try{let response=await fetch('./wp-status.json?ts='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('初回取得待ち');let d=await response.json();if(d.status!=='ok'||!Array.isArray(d.posts))throw Error('データ不正');let age=Date.now()-Date.parse(d.checked_at);document.getElementById('publicCount').textContent=Number(d.published_count);document.getElementById('lastFetch').textContent='最終取得：'+new Date(d.checked_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'});document.getElementById('fetchNote').textContent=age>3*3600000?'注意：取得から3時間以上経過。最新情報は未確認です。':'公開WordPress APIから取得。品質・購入リンクは未検証です。'}catch(e){document.getElementById('publicCount').textContent='—';document.getElementById('lastFetch').textContent='自動取得：未確認（'+e.message+'）';}}
+loadStatus();setInterval(loadStatus,5*60*1000);
+</script></body>
 </html>
