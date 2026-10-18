@@ -1,11 +1,16 @@
 {
   "schema_version": 1,
   "team_id": "c",
-  "updated_at": null,
-  "status": "unconfirmed",
-  "task": null,
-  "progress": null,
-  "last_report": null,
-  "issues": [],
-  "source_urls": []
+  "status": "in_progress",
+  "task": "C班の実報告登録とAI編集室への表示反映の独立確認",
+  "progress": "共通手順・保存用スクリプト・未報告のC班JSONを確認。C班ファイルだけを検査して保存し、公開画面の本文と更新日時を照合する。",
+  "last_report": "2026年10月18日、C班自身の進捗連携を開始。前回9696f04対象では資料整合性・指定4幅は合格。10月17日のオーナー実機報告は停止操作が正常、演出が不自然との指摘で、演出品質を差し戻した。これらは旧版の結果であり、修正版6a2be71以降や進捗連携版の独立品質合格へ流用しない。今回の公開表示確認は進捗連携のみを対象とし、WordPressは変更しない。",
+  "issues": [
+    "スマホ実機の総合検査、単体HTML実動作、OSの動き軽減設定の実切替はC班では未完了。",
+    "新版の演出品質・全体品質は未検証。電話・歩行ポーズは完成条件から除外済み。"
+  ],
+  "source_urls": [
+    "https://monohunt-22.github.io/monohunt-dashboard/office.html"
+  ],
+  "updated_at": "2026-10-18T00:47:22+00:00"
 }
