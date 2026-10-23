@@ -1,9 +1,16 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-10-23T05:38:37.256455+00:00",
+  "checked_at": "2026-10-23T06:47:36.579630+00:00",
   "status": "ok",
-  "published_count": 28,
+  "published_count": 29,
   "posts": [
+    {
+      "id": 633,
+      "title": "HARIOスイッチはどこで売ってる？ロフト・ヨドバシ・通販の取扱店を調査",
+      "modified": "2026-10-23T14:53:49",
+      "date": "2026-10-23T14:40:45",
+      "link": "https://monohunt.com/hario-switch-hanbaiten/"
+    },
     {
       "id": 368,
       "title": "SwitchBot カーテン3は買うべき？取り付け条件・ハブ・両開きの費用を解説",
