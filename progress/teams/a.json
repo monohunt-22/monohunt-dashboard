@@ -1,18 +1,20 @@
 {
   "schema_version": 1,
   "team_id": "a",
-  "status": "in_progress",
+  "status": "waiting",
   "task": "Anker A1637／A1638 比較記事1本の制作",
-  "progress": "過去の比較記事ガイドを再確認。公式仕様と販売状況を照合し、WordPress外で本文・比較表・デザイン・購入導線・SEO案を制作する。",
-  "last_report": "編集長の開始指示に基づき1記事だけ着手。既存ガイドの構成とGitHub進捗連携を再利用。A1637／A1638の公式商品情報を取得し、単ポートと同時使用の出力を分けて比較する。テンプレート原本・過去の見本画像は所在を確認中。",
+  "progress": "WordPress外の6点（事実確認・構成・本文と比較表・画像配置・購入導線設計・SEO案）を整備。既存Pochipp照合と接続承認・利用可能枠の確認待ち。",
+  "last_report": "比較は成立。公式2商品と説明書、購入者の個別レビューを確認し、約5000字の原稿・比較8項目・FAQ5問・内部確認HTMLを保存。3モールの商品掲載先は各モデルで確認したが成果リンク未検証。公式画像候補2点を目視確認、公開利用条件は未確認。記事ID・記事URLは未発行。WordPress接続・保存・変更・公開0件。C班独立検査は未実施。記事の完成・公開可とは扱わない。",
   "issues": [
-    "A1637／A1638のPochipp ID・収益リンク・実商品画像の掲載条件は未確認。",
-    "無料枠の残数が不明のためWordPressへは接続していない。保存・変更・公開にはオーナー承認が必要。",
-    "既存下書きを含む完全な重複確認はWordPress未接続のため未完了。"
+    "Pochipp ID・画像の公開利用条件・Amazon／楽天／Yahoo!の所有成果リンクが未確認。",
+    "無料枠の残数不明。オーナーの接続承認と利用可能枠の確認後、既存Pochipp2商品と全状態の記事一覧をまとめて読取確認する必要がある。",
+    "WordPress内SEO設定、スマホ実表示、実機、下書きを含む完全重複確認、C班独立検査は未完了。",
+    "過去のmybest原本画像は今回未特定。保存済み比較テンプレートv2とMONOHUNT記事デザインガイド画像は確認・再利用済み。"
   ],
   "source_urls": [
     "https://www.ankerjapan.com/products/a1637",
-    "https://www.ankerjapan.com/products/a1638"
+    "https://www.ankerjapan.com/products/a1638",
+    "https://lp.ankerjapan.com/hubfs/aoos/manual/A1638Manual.pdf"
   ],
-  "updated_at": "2026-10-23T00:38:45+00:00"
+  "updated_at": "2026-10-23T00:53:54+00:00"
 }
