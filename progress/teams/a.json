@@ -1,17 +1,18 @@
 {
   "schema_version": 1,
   "team_id": "a",
-  "status": "completed",
-  "task": "進捗連携の最終確認（2026-10-20）",
-  "progress": "保存済みの共通JSON・自動取得コードを再利用。A班の今回報告をGitHubへ保存し、公開画面を再読み込みせず5項目と更新日時が切り替わることを確認。",
-  "last_report": "2026年10月20日のA班完了報告。0543f864の実報告が公開AI編集室へ自動反映され、10:50:43 JSTの取得表示で担当作業・進捗・最終報告・問題点・更新日時を確認した。画面コード・人物画像・個人メモ・原本比較は変更せず、C班を含む他班の報告を保全。未報告班と24時間以上更新のない班は未確認の表示を維持。",
+  "status": "in_progress",
+  "task": "Anker A1637／A1638 比較記事1本の制作",
+  "progress": "過去の比較記事ガイドを再確認。公式仕様と販売状況を照合し、WordPress外で本文・比較表・デザイン・購入導線・SEO案を制作する。",
+  "last_report": "編集長の開始指示に基づき1記事だけ着手。既存ガイドの構成とGitHub進捗連携を再利用。A1637／A1638の公式商品情報を取得し、単ポートと同時使用の出力を分けて比較する。テンプレート原本・過去の見本画像は所在を確認中。",
   "issues": [
-    "スマホ実機・OS設定の実切替・ローカル起動は未検証。",
-    "他チャットは自動監視できない。各班がGitHubへ節目の報告を保存する必要がある。"
+    "A1637／A1638のPochipp ID・収益リンク・実商品画像の掲載条件は未確認。",
+    "無料枠の残数が不明のためWordPressへは接続していない。保存・変更・公開にはオーナー承認が必要。",
+    "既存下書きを含む完全な重複確認はWordPress未接続のため未完了。"
   ],
   "source_urls": [
-    "https://github.com/monohunt-22/monohunt-dashboard/commit/0543f864f914928d6da8a63b874c64a1ca86b54c",
-    "https://github.com/monohunt-22/monohunt-dashboard/blob/main/progress/COMPLETION_QA_20261020.md"
+    "https://www.ankerjapan.com/products/a1637",
+    "https://www.ankerjapan.com/products/a1638"
   ],
-  "updated_at": "2026-10-20T01:51:40+00:00"
+  "updated_at": "2026-10-23T00:38:45+00:00"
 }
