@@ -1,16 +1,9 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-10-22T23:37:03.952825+00:00",
+  "checked_at": "2026-10-23T00:52:10.903104+00:00",
   "status": "ok",
-  "published_count": 35,
+  "published_count": 28,
   "posts": [
-    {
-      "id": 468,
-      "title": "ReFa SMART WとS+を徹底比較｜400円差ならどっちがおすすめ？",
-      "modified": "2026-10-17T16:06:07",
-      "date": "2026-10-11T08:19:41",
-      "link": "https://monohunt.com/refa-smart-w-splus-comparison/"
-    },
     {
       "id": 368,
       "title": "SwitchBot カーテン3は買うべき？取り付け条件・ハブ・両開きの費用を解説",
@@ -117,20 +110,6 @@
       "link": "https://monohunt.com/ee-dg50-ee-df50-difference/"
     },
     {
-      "id": 153,
-      "title": "SwitchBot 空気清浄機とTableの違い｜5,000円差・充電・交換費用で比較",
-      "modified": "2026-10-06T21:33:04",
-      "date": "2026-10-06T21:33:04",
-      "link": "https://monohunt.com/switchbot-air-purifier-table-difference/"
-    },
-    {
-      "id": 152,
-      "title": "SwitchBot S20とS10の違い｜水道直結・タンク・買い替え条件で比較",
-      "modified": "2026-10-06T21:33:03",
-      "date": "2026-10-06T21:33:03",
-      "link": "https://monohunt.com/switchbot-s20-s10-difference/"
-    },
-    {
       "id": 150,
       "title": "SwitchBot ハブミニMatter対応版と通常版の違い｜500円差と選び方",
       "modified": "2026-10-06T21:33:03",
@@ -173,27 +152,6 @@
       "link": "https://monohunt.com/switchbot-presence-sensor-pro-motion-sensor-difference/"
     },
     {
-      "id": 137,
-      "title": "SwitchBot 温湿度計プラスと通常モデルの違い｜画面・保存期間・価格で比較",
-      "modified": "2026-10-05T13:38:36",
-      "date": "2026-10-05T13:38:36",
-      "link": "https://monohunt.com/switchbot-meter-plus-standard-difference/"
-    },
-    {
-      "id": 134,
-      "title": "SwitchBot 温湿度計Proと温湿度計プラスの違い｜画面・価格・機能で比較",
-      "modified": "2026-10-05T13:37:44",
-      "date": "2026-10-05T13:37:44",
-      "link": "https://monohunt.com/switchbot-meter-pro-plus-difference/"
-    },
-    {
-      "id": 131,
-      "title": "SwitchBot CO2センサーと温湿度計Proの違い｜価格・測定項目で比較",
-      "modified": "2026-10-05T13:36:16",
-      "date": "2026-10-05T13:36:16",
-      "link": "https://monohunt.com/switchbot-co2-meter-meter-pro-difference/"
-    },
-    {
       "id": 126,
       "title": "SwitchBot ハブ3とハブ2の違い｜価格・センサー・操作性で比較",
       "modified": "2026-10-05T13:33:00",
@@ -234,13 +192,6 @@
       "modified": "2026-10-17T16:05:56",
       "date": "2026-10-04T10:34:53",
       "link": "https://monohunt.com/switchbot-evaporative-humidifier-plus-difference/"
-    },
-    {
-      "id": 41,
-      "title": "Re・De Hair Straight SmoothとMoistの違い｜HS01A・HS02Aの選び方",
-      "modified": "2026-10-05T12:42:05",
-      "date": "2026-10-04T10:34:53",
-      "link": "https://monohunt.com/rede-hair-straight-smooth-moist-difference/"
     },
     {
       "id": 40,
