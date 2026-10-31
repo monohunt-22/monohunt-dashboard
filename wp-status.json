@@ -1,22 +1,7 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-10-31T10:41:31.658638+00:00",
+  "checked_at": "2026-10-31T11:41:01.228733+00:00",
   "status": "ok",
-  "published_count": 2,
-  "posts": [
-    {
-      "id": 230,
-      "title": "アラジントースター2枚焼きと4枚焼きの違い｜人数・置き場所・グリルパンで選ぶ",
-      "modified": "2026-10-31T09:20:50",
-      "date": "2026-10-07T12:13:05",
-      "link": "https://monohunt.com/aladdin-toaster-2slice-4slice-difference/"
-    },
-    {
-      "id": 227,
-      "title": "EH-NA0KとEH-NA0Jの違い｜ノズル追加に価格差を払う価値は？",
-      "modified": "2026-10-31T12:09:48",
-      "date": "2026-10-07T12:06:20",
-      "link": "https://monohunt.com/eh-na0k-eh-na0j-difference/"
-    }
-  ]
+  "published_count": 0,
+  "posts": []
 }
