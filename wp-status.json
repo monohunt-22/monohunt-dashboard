@@ -1,8 +1,8 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-10-31T02:51:31.057945+00:00",
+  "checked_at": "2026-10-31T04:49:36.999425+00:00",
   "status": "ok",
-  "published_count": 6,
+  "published_count": 2,
   "posts": [
     {
       "id": 230,
@@ -14,37 +14,9 @@
     {
       "id": 227,
       "title": "EH-NA0KとEH-NA0Jの違い｜ノズル追加に価格差を払う価値は？",
-      "modified": "2026-10-31T09:20:53",
+      "modified": "2026-10-31T12:09:48",
       "date": "2026-10-07T12:06:20",
       "link": "https://monohunt.com/eh-na0k-eh-na0j-difference/"
-    },
-    {
-      "id": 226,
-      "title": "EE-DG50とEE-DF50の違い｜加湿力・運転音・型落ちの選び方",
-      "modified": "2026-10-31T09:22:20",
-      "date": "2026-10-07T10:35:44",
-      "link": "https://monohunt.com/ee-dg50-ee-df50-difference/"
-    },
-    {
-      "id": 44,
-      "title": "SwitchBot ロックLite・Pro・Ultraの違い｜対応ドアと総額で選ぶ",
-      "modified": "2026-10-31T09:19:06",
-      "date": "2026-10-04T10:34:53",
-      "link": "https://monohunt.com/switchbot-lock-lite-pro-ultra-difference/"
-    },
-    {
-      "id": 42,
-      "title": "SwitchBot 気化式加湿器Plusと通常モデルの違い｜自動給水の条件を比較",
-      "modified": "2026-10-31T09:22:28",
-      "date": "2026-10-04T10:34:53",
-      "link": "https://monohunt.com/switchbot-evaporative-humidifier-plus-difference/"
-    },
-    {
-      "id": 40,
-      "title": "cado STEM 500Hと350の違いは？加湿量・手入れ・維持費で比較",
-      "modified": "2026-10-31T09:22:25",
-      "date": "2026-10-04T10:34:53",
-      "link": "https://monohunt.com/cado-stem-500h-350-difference/"
     }
   ]
 }
