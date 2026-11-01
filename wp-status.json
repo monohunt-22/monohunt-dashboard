@@ -1,7 +1,15 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-11-01T05:49:41.871175+00:00",
+  "checked_at": "2026-11-01T07:00:12.841365+00:00",
   "status": "ok",
-  "published_count": 0,
-  "posts": []
+  "published_count": 1,
+  "posts": [
+    {
+      "id": 749,
+      "title": "ReFa SMART WとS+の違いを比較｜400円差ならどっちを選ぶ？",
+      "modified": "2026-11-01T15:10:06",
+      "date": "2026-11-01T14:58:15",
+      "link": "https://monohunt.com/refa-smart-w-s-plus-difference/"
+    }
+  ]
 }
