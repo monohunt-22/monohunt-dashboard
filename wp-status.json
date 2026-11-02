@@ -1,9 +1,16 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-11-02T02:55:41.198841+00:00",
+  "checked_at": "2026-11-02T03:58:50.226376+00:00",
   "status": "ok",
-  "published_count": 1,
+  "published_count": 2,
   "posts": [
+    {
+      "id": 830,
+      "title": "EH-SB50とEH-SB30の違い｜化粧水ミストに追加料金を払う価値は？",
+      "modified": "2026-11-02T12:19:20",
+      "date": "2026-11-02T12:19:19",
+      "link": "https://monohunt.com/eh-sb50-vs-eh-sb30-difference/"
+    },
     {
       "id": 749,
       "title": "ReFa SMART WとS+の違いを比較｜400円差ならどっちを選ぶ？",
