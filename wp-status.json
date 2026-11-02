@@ -1,9 +1,16 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-11-02T07:29:23.433024+00:00",
+  "checked_at": "2026-11-02T09:08:37.462266+00:00",
   "status": "ok",
-  "published_count": 2,
+  "published_count": 3,
   "posts": [
+    {
+      "id": 831,
+      "title": "バルミューダ KTT02JPとK11Aの違い｜食パン中心なら旧型で十分？",
+      "modified": "2026-11-02T17:39:06",
+      "date": "2026-11-02T17:37:53",
+      "link": "https://monohunt.com/balmuda-ktt02jp-vs-k11a-difference/"
+    },
     {
       "id": 830,
       "title": "EH-SB50とEH-SB30の違い｜化粧水ミストに追加料金を払う価値は？",
