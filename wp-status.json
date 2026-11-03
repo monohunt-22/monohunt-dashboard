@@ -1,9 +1,16 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-11-03T03:55:49.647809+00:00",
+  "checked_at": "2026-11-03T04:58:31.072716+00:00",
   "status": "ok",
-  "published_count": 3,
+  "published_count": 4,
   "posts": [
+    {
+      "id": 869,
+      "title": "EH-SR90とEH-SR86の違い｜19,800円差はRFとEMSの進化に払う価値がある？",
+      "modified": "2026-11-03T13:27:19",
+      "date": "2026-11-03T13:27:19",
+      "link": "https://monohunt.com/eh-sr90-vs-eh-sr86-difference/"
+    },
     {
       "id": 831,
       "title": "バルミューダ KTT02JPとK11Aの違い｜食パン中心なら旧型で十分？",
