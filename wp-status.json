@@ -1,9 +1,16 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-11-05T07:23:30.185590+00:00",
+  "checked_at": "2026-11-05T09:06:03.651315+00:00",
   "status": "ok",
-  "published_count": 5,
+  "published_count": 6,
   "posts": [
+    {
+      "id": 930,
+      "title": "ナノケア EH-NA0KとReFa S+を比較｜ノズル・軽さ・冷風操作で選ぶ",
+      "modified": "2026-11-05T17:37:34",
+      "date": "2026-11-05T17:37:33",
+      "link": "https://monohunt.com/eh-na0k-vs-refa-s-plus-difference/"
+    },
     {
       "id": 870,
       "title": "NI-FS70CとNI-FS60Cの違い｜スチーム量は同じ！価格差で何が変わる？",
