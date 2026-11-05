@@ -1,9 +1,16 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-11-05T09:06:03.651315+00:00",
+  "checked_at": "2026-11-05T10:09:13.192420+00:00",
   "status": "ok",
-  "published_count": 6,
+  "published_count": 7,
   "posts": [
+    {
+      "id": 931,
+      "title": "バルミューダ K11Aとアラジン AGT-G13Bを比較｜焼き上がりと価格で選ぶ",
+      "modified": "2026-11-05T18:51:59",
+      "date": "2026-11-05T18:51:59",
+      "link": "https://monohunt.com/balmuda-k11a-vs-aladdin-agt-g13b-difference/"
+    },
     {
       "id": 930,
       "title": "ナノケア EH-NA0KとReFa S+を比較｜ノズル・軽さ・冷風操作で選ぶ",
