@@ -1,9 +1,16 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-11-06T03:57:10.335923+00:00",
+  "checked_at": "2026-11-06T05:01:35.417041+00:00",
   "status": "ok",
-  "published_count": 8,
+  "published_count": 9,
   "posts": [
+    {
+      "id": 970,
+      "title": "FE-KX07DとFE-KF07Dの違い｜価格差3,000円でナノイー搭載を選ぶ？",
+      "modified": "2026-11-06T13:35:57",
+      "date": "2026-11-06T13:35:56",
+      "link": "https://monohunt.com/fe-kx07d-vs-fe-kf07d-difference/"
+    },
     {
       "id": 969,
       "title": "EH-NA9MとEH-NA7Mの違い｜毎日仕上げモードを使うなら上位機を選ぶ理由",
