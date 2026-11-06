@@ -1,9 +1,16 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-11-06T02:18:51.571559+00:00",
+  "checked_at": "2026-11-06T03:57:10.335923+00:00",
   "status": "ok",
-  "published_count": 7,
+  "published_count": 8,
   "posts": [
+    {
+      "id": 969,
+      "title": "EH-NA9MとEH-NA7Mの違い｜毎日仕上げモードを使うなら上位機を選ぶ理由",
+      "modified": "2026-11-06T12:42:41",
+      "date": "2026-11-06T12:42:41",
+      "link": "https://monohunt.com/eh-na9m-vs-eh-na7m-difference/"
+    },
     {
       "id": 931,
       "title": "バルミューダ K11Aとアラジン AGT-G13Bを比較｜焼き上がりと価格で選ぶ",
