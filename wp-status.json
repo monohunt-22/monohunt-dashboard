@@ -1,9 +1,16 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-11-08T11:45:07.945658+00:00",
+  "checked_at": "2026-11-08T12:55:24.234129+00:00",
   "status": "ok",
-  "published_count": 10,
+  "published_count": 11,
   "posts": [
+    {
+      "id": 1004,
+      "title": "EE-DF50とEE-RU50の違い｜加湿量は同じ、4Lと3Lで選ぶ",
+      "modified": "2026-11-08T20:57:12",
+      "date": "2026-11-08T20:57:12",
+      "link": "https://monohunt.com/ee-df50-vs-ee-ru50-difference/"
+    },
     {
       "id": 1003,
       "title": "IB-WX902とIB-WX901の違い｜速乾性能が同等なら価格と色で選ぶ",
