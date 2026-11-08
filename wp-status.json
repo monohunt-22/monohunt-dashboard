@@ -1,9 +1,16 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-11-08T08:56:00.683753+00:00",
+  "checked_at": "2026-11-08T09:51:29.190498+00:00",
   "status": "ok",
-  "published_count": 9,
+  "published_count": 10,
   "posts": [
+    {
+      "id": 1003,
+      "title": "IB-WX902とIB-WX901の違い｜速乾性能が同等なら価格と色で選ぶ",
+      "modified": "2026-11-08T18:45:12",
+      "date": "2026-11-08T18:45:12",
+      "link": "https://monohunt.com/ib-wx902-vs-ib-wx901-difference/"
+    },
     {
       "id": 970,
       "title": "FE-KX07DとFE-KF07Dの違い｜価格差3,000円でナノイー搭載を選ぶ？",
