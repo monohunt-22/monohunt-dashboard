@@ -1,9 +1,16 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-11-10T04:58:08.146983+00:00",
+  "checked_at": "2026-11-10T05:57:49.901140+00:00",
   "status": "ok",
-  "published_count": 11,
+  "published_count": 12,
   "posts": [
+    {
+      "id": 805,
+      "title": "EH-NA0KとEH-NA0Jの違いは？型落ちで十分？ノズルと価格差で選ぶ",
+      "modified": "2026-11-10T14:32:03",
+      "date": "2026-11-10T14:32:02",
+      "link": "https://monohunt.com/eh-na0k-vs-eh-na0j-difference/"
+    },
     {
       "id": 1004,
       "title": "EE-DF50とEE-RU50の違い｜加湿量は同じ、4Lと3Lで選ぶ",
