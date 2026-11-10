@@ -1,9 +1,16 @@
 {
   "source": "MONOHUNT public WordPress REST API",
-  "checked_at": "2026-11-10T08:22:54.819198+00:00",
+  "checked_at": "2026-11-10T09:58:27.974496+00:00",
   "status": "ok",
-  "published_count": 12,
+  "published_count": 13,
   "posts": [
+    {
+      "id": 806,
+      "title": "EE-DG50とEE-DF50の違いは？象印加湿器は型落ちで十分？",
+      "modified": "2026-11-10T17:43:23",
+      "date": "2026-11-10T17:43:22",
+      "link": "https://monohunt.com/ee-dg50-vs-ee-df50-difference/"
+    },
     {
       "id": 805,
       "title": "EH-NA0KとEH-NA0Jの違いは？型落ちで十分？ノズルと価格差で選ぶ",
